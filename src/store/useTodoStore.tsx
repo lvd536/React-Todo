@@ -1,12 +1,12 @@
-import { create, StateCreator } from "zustand";
+import { create, type StateCreator } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
 
-interface ITodo {
+export interface ITodo {
     id: number,
     title: string,
     description: string,
-    date: string,
+    date: Date,
     completed: boolean
 }
 
@@ -52,4 +52,4 @@ const useTodoStore = create<ITodoStore>()(
 export const useTodos = () => useTodoStore((s: ITodoStore) => s.todos);
 export const addTodo = (todo: ITodo) => useTodoStore.getState().addTodo(todo);
 export const removeTodo = (id: number) => useTodoStore.getState().removeTodo(id);
-export const toggleTodo = (id: number) => useTodoStore.getSatate().toggleTodo(id);
+export const toggleTodo = (id: number) => useTodoStore.getState().toggleTodo(id);
