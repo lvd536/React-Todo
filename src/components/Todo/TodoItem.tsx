@@ -1,3 +1,4 @@
+import Bars from "../../assets/Bars";
 import Edit from "../../assets/Edit";
 import Remove from "../../assets/Remove";
 import { toggleTodo, type ITodo } from "../../store/useTodoStore";
@@ -10,8 +11,9 @@ export default function TodoItem({todo}: {todo: ITodo}) {
       <span className="font-main text-xl text-black dark:text-white">{todo.title}</span>
       </div>
       <div className="flex items-center gap-2">
-        <Edit/>
-        <Remove/>
+        <Bars todo={todo}/>
+        <Edit todo={todo}/>
+        <Remove id={todo.id}/>
       </div>
     </div>
   );

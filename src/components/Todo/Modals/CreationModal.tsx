@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { toggleModal } from "../../store/useModalStore";
-import { addTodo, type ITodo } from "../../store/useTodoStore";
+import { toggleModal } from "../../../store/useModalStore";
+import { addTodo, type ITodo } from "../../../store/useTodoStore";
 
 interface FormData {
   name: string;
   description: string;
 }
 
-export default function Modal() {
+export default function CreationModal() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     description: ""
