@@ -11,6 +11,20 @@
   --color-black: #252525;
 	--color-purple: #6c63ff;
 	--color-white: #f7f7f7;
+  --animate-modal: modal 0.3s ease-in-out;
+
+  @keyframes modal {
+    0% {
+      scale: 0;
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      scale: 1;
+    }
+  }
 }
 
 :root {
@@ -23,6 +37,7 @@
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: all 0.45s;
 }
 
 .dark {
