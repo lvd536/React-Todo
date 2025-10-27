@@ -17,7 +17,7 @@ export default function CreationModal() {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: name === "date" ? new Date(value) : value
+      [name]: value
     });
   };
 
