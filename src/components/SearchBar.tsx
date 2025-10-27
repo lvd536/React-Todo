@@ -1,12 +1,10 @@
-import Search from "../assets/Search";
-
 export default function SearchBar() {
   return (
     <>
-      <div className="font-second flex w-11/12 h-4 items-center justify-between ring-indigo-500 dark:ring-white ring-1 rounded-xs p-4 text-xs text-gray-500">
-        <input type="search" name="" id="" className="w-12/12 h-6"/>
-        <Search />
-      </div>
+        <form className="font-second flex items-center w-full h-4 justify-between gap-5 mt-6" action="">
+          <input type="search" name="" id="" className="w-full h-full ring-indigo-500 dark:ring-white ring-1 rounded-xs p-4 text-xs text-gray-500"/>
+          <button type="submit" className="bg-indigo-500 rounded-xs w-34 h-9">Search</button>
+        </form>
     </>
   );
 }
