@@ -1,7 +1,8 @@
-import type { ITodo } from "../../store/useTodoStore";
+import { useTodos } from "../../store/useTodoStore";
 import TodoItem from "./TodoItem";
 
-export default function TodoList({todos} : {todos: ITodo[]}) {
+export default function TodoList() {
+  const todos = useTodos();
   return (
     <div className="flex w-full flex-col gap-5 pt-15">
         {
