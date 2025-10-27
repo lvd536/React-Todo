@@ -73,7 +73,7 @@ export default function EditModal() {
           </button>
           <button
             type="submit"
-            className="flex font-main items-center justify-center p-4 w-28 h-10 bg-indigo-500 rounded-md"
+            className="flex font-main items-center justify-center p-4 w-28 h-10 bg-indigo-500 text-white rounded-md"
           >
             Edit
           </button>
