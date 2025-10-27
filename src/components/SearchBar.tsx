@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { setSearchValue } from "../store/useTodoStore";
 
 export default function SearchBar() {
@@ -10,6 +10,10 @@ export default function SearchBar() {
     e.preventDefault();
     setSearchValue(search.toLowerCase());
   }
+  useEffect(() => {
+    console.log(search)
+    if (search === '') setSearchValue('');
+  }, [search])
   return (
     <>
         <form className="font-second flex items-center w-full h-4 justify-between gap-5 mt-6" action="" onSubmit={handleSubmit}>
