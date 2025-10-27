@@ -12,6 +12,7 @@
 	--color-purple: #6c63ff;
 	--color-white: #f7f7f7;
   --animate-modal: modal 0.3s ease-in-out;
+  --animate-filter: filters .5s forwards;
 
   @keyframes modal {
     0% {
@@ -23,6 +24,13 @@
     }
     100% {
       scale: 1;
+    }
+  }
+  @keyframes filters {
+    from {
+      height: 0;
+    } to {
+      height: 100%;
     }
   }
 }
