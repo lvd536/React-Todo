@@ -6,7 +6,7 @@ export default function Moon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="size-6 z-1"
+      className="size-6 z-1 text-white dark:text-black transition-colors duration-300"
     >
       <path
         strokeLinecap="round"
