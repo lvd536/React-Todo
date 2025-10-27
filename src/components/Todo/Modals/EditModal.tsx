@@ -39,10 +39,10 @@ export default function EditModal() {
   return (
     <div className="flex font-second fixed items-center justify-center w-screen h-screen bg-gray-500/30 z-2">
       <form
-        className="flex text-black dark:text-white relative flex-col items-center justify-center w-1/2 h-4/6 bg-white dark:bg-black ring-white dark:rind-black ring-1 rounded-xl gap-5 px-10 animate-modal"
+        className="flex text-black dark:text-white relative flex-col items-center justify-center w-5/6 sm:w-1/2 h-4/6 bg-white dark:bg-black ring-white dark:rind-black ring-1 rounded-xl gap-5 px-10 animate-modal"
         onSubmit={handleSubmit}
       >
-        <h1 className="font-main text-2xl">NEW NOTE</h1>
+        <h1 className="font-main text-2xl">EDIT NOTE</h1>
         <label htmlFor="todoName">Name</label>
         <input
           className="ring-1 dark:ring-white ring-indigo-500 w-full rounded-md p-2"

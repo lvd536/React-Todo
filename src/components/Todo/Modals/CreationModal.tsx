@@ -38,7 +38,7 @@ export default function CreationModal() {
   return (
     <div className="flex font-second fixed items-center justify-center w-screen h-screen bg-gray-500/30 z-2">
       <form
-        className="flex text-black dark:text-white relative flex-col items-center justify-center w-1/2 h-4/6 bg-white dark:bg-black ring-white dark:rind-black ring-1 rounded-xl gap-5 px-10 animate-modal"
+        className="flex text-black dark:text-white relative flex-col items-center justify-center w-5/6 sm:w-1/2 h-4/6 bg-white dark:bg-black ring-white dark:rind-black ring-1 rounded-xl gap-5 px-10 animate-modal"
         onSubmit={handleSubmit}
       >
         <h1 className="font-main text-2xl">NEW NOTE</h1>
@@ -63,7 +63,7 @@ export default function CreationModal() {
           value={formData.description}
           onChange={handleChange}
         />
-        <div className="flex justify-between w-full gap-5 pt-10">
+        <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-5 pt-10">
           <button
             className="flex font-main items-center justify-center p-4 w-28 h-10 ring-1 ring-indigo-500 rounded-md text-indigo-500"
             onClick={handleClick}
