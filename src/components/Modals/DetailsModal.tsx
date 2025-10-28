@@ -1,5 +1,5 @@
-import { toggleModal } from "../../../store/useModalStore";
-import { useActiveTodo } from "../../../store/useTodoStore";
+import { toggleModal } from "../../store/useModalStore";
+import { useActiveTodo } from "../../store/useTodoStore";
 
 export default function DetailsModal() {
   const activeTodo = useActiveTodo();

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { setSearchValue } from "../store/useTodoStore";
+import { setSearchValue, useSearchValue } from "../store/useSearchStore";
 
 export default function SearchBar() {
-  const [search, setSearch] = useState<string>('');
+  const [search, setSearch] = useState<string>(useSearchValue());
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
   }

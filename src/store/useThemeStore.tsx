@@ -11,8 +11,8 @@ const useThemeStore = create<IThemeStore>()(
     immer(persist((set) => ({
         theme: 'dark',
         toggleTheme: () => set((s: IThemeStore) => ({
-        theme: s.theme === 'light' ? 'dark' : 'light'
-    }))
+            theme: s.theme === 'light' ? 'dark' : 'light'
+        }))
     }), {name: 'themeStorage'}))
 )
 

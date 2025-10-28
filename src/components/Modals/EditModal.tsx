@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { toggleModal } from "../../../store/useModalStore";
-import { editTodo, useActiveTodo, type ITodo } from "../../../store/useTodoStore";
+import { toggleModal } from "../../store/useModalStore";
+import { editTodo, useActiveTodo, type ITodo } from "../../store/useTodoStore";
 
 interface FormData {
   name: string;

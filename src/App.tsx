@@ -1,8 +1,8 @@
 import CreateButton from "./components/CreateButton";
 import NavBar from "./components/NavBar";
-import CreationModal from "./components/Todo/Modals/CreationModal";
-import DetailsModal from "./components/Todo/Modals/DetailsModal";
-import EditModal from "./components/Todo/Modals/EditModal";
+import CreationModal from "./components/Modals/CreationModal";
+import DetailsModal from "./components/Modals/DetailsModal";
+import EditModal from "./components/Modals/EditModal";
 import TodoList from "./components/Todo/TodoList";
 import { useIsModalOpen, useModalType } from "./store/useModalStore";
 import { useActiveTodo } from "./store/useTodoStore";

@@ -1,4 +1,4 @@
-import Filters from "./Filters";
+import Filters from "./Filters/Filters";
 import SearchBar from "./SearchBar";
 import ThemeToggle from "./ThemeToggle";
 
