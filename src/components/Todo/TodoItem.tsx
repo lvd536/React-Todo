@@ -38,7 +38,7 @@ export default function TodoItem({ todo }: { todo: ITodo }) {
           </div>
         </div>
       </div>
-      <span className={`font-main text-black/70 dark:text-white/70  ${isHovered && todo.description ? 'inline' : 'hidden'} transition-border duration-600`}>Description: {todo.description}</span>
+      <span className={`font-main text-black/70 dark:text-white/70  ${isHovered && todo.description ? 'inline' : 'hidden'} transition-border animate-description duration-600`}>Description: {todo.description}</span>
     </div>
   );
 }

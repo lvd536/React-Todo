@@ -12,6 +12,7 @@
 	--color-purple: #6c63ff;
 	--color-white: #f7f7f7;
   --animate-modal: modal 0.3s ease-in-out;
+  --animate-description: description 0.6s ease-in-out;
 
   @keyframes modal {
     0% {
@@ -23,6 +24,15 @@
     }
     100% {
       scale: 1;
+    }
+  }
+
+  @keyframes description {
+    0% {
+      transform: translateY(-25px);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 }
