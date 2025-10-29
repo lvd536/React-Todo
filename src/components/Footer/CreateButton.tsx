@@ -1,5 +1,5 @@
-import Plus from "../assets/Plus";
-import { setModalType, toggleModal } from "../store/useModalStore";
+import Plus from "../../assets/Plus";
+import { setModalType, toggleModal } from "../../store/useModalStore";
 
 export default function CreateButton() {
   const handleClick = () => {
