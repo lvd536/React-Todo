@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import Moon from "../assets/Moon";
-import Sun from "../assets/Sun";
-import { toggleTheme, useTheme } from "../store/useThemeStore";
+import Moon from "../../assets/Moon";
+import Sun from "../../assets/Sun";
+import { toggleTheme, useTheme } from "../../store/useThemeStore";
 
 export default function ThemeToggle() {
   const theme = useTheme();

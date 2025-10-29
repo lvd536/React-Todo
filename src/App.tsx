@@ -1,5 +1,5 @@
 import CreateButton from "./components/CreateButton";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navigation/NavBar";
 import CreationModal from "./components/Modals/CreationModal";
 import DetailsModal from "./components/Modals/DetailsModal";
 import EditModal from "./components/Modals/EditModal";

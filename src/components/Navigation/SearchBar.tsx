@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { setSearchValue, useSearchValue } from "../store/useSearchStore";
+import { setSearchValue, useSearchValue } from "../../store/useSearchStore";
 
 export default function SearchBar() {
   const [search, setSearch] = useState<string>(useSearchValue());
