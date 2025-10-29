@@ -38,7 +38,7 @@ export default function TodoItem({ todo }: { todo: ITodo }) {
           </div>
         </div>
       </div>
-      <span className={`font-main ${isHovered ? 'inline' : 'hidden'} transition-all duration-600`}>Description: {todo.description}</span>
+      <span className={`font-main ${isHovered && todo.description ? 'inline' : 'hidden'} transition-all duration-600`}>Description: {todo.description}</span>
     </div>
   );
 }
